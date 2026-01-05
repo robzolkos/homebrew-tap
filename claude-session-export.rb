@@ -5,21 +5,21 @@
 class ClaudeSessionExport < Formula
   desc "Transform Claude Code sessions into shareable HTML documentation"
   homepage "https://github.com/robzolkos/claude-session-export"
-  version "0.8.1"
+  version "0.9.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.8.1/claude-session-export_0.8.1_darwin_amd64.tar.gz"
-      sha256 "93bda6a2963e98f5d285d9f3b79fb44fe07940445f06a15bf0bc0357d3934340"
+      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.9.0/claude-session-export_0.9.0_darwin_amd64.tar.gz"
+      sha256 "aaa2baa3cbd8c885b21a5667a61153f4b14a60a06fa477f5689c117955714a04"
 
       def install
         bin.install "claude-session-export"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.8.1/claude-session-export_0.8.1_darwin_arm64.tar.gz"
-      sha256 "11052109fcd174dfd0b8def8e0c7fef9e7b8858be4d9fe7265ea62c787fc7244"
+      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.9.0/claude-session-export_0.9.0_darwin_arm64.tar.gz"
+      sha256 "90d636b06c390ad0fe8b743335856ca96dcf1b0d542e249a1df2637a5f40fedc"
 
       def install
         bin.install "claude-session-export"
@@ -29,15 +29,15 @@ class ClaudeSessionExport < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.8.1/claude-session-export_0.8.1_linux_amd64.tar.gz"
-      sha256 "ef8cdc6b442c5c8c03c88aaa1411cc7f58f9557b14c116c73ba02035ca35ca3a"
+      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.9.0/claude-session-export_0.9.0_linux_amd64.tar.gz"
+      sha256 "51ea301153fcc99d8a8414606de05b53cc1d4c255a078b62d5645f395b641e5e"
       def install
         bin.install "claude-session-export"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.8.1/claude-session-export_0.8.1_linux_arm64.tar.gz"
-      sha256 "5c106a8a20e332f8d328fc98dfa6a6527e185786eaf4b5da9ca31e22226299a0"
+      url "https://github.com/robzolkos/claude-session-export/releases/download/v0.9.0/claude-session-export_0.9.0_linux_arm64.tar.gz"
+      sha256 "782af40d4a763043905f40a8b9a2c340587e5d3a750432ea18780f0c4f10290e"
       def install
         bin.install "claude-session-export"
       end
