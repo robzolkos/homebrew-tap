@@ -1,16 +1,16 @@
 class BasecampCli < Formula
   desc "CLI for interacting with Basecamp projects and card tables"
   homepage "https://github.com/robzolkos/basecamp-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/robzolkos/basecamp-cli/releases/download/v#{version}/basecamp-darwin-arm64"
-      sha256 "dbdbd2d3c9fedc1bcd0b5ee16cd7a3babd9a66003e29a2171c2e2eeaef8b69e5"
+      sha256 "911cf4c545a8ed8bcd1c5b21d420347327bd00fa3efdeb7499fc3b20978f6586"
     else
       url "https://github.com/robzolkos/basecamp-cli/releases/download/v#{version}/basecamp-darwin-amd64"
-      sha256 "8a10a0e989112378ff1d5f04b45d289997c86f19ae4418f26ebb67625326f9e7"
+      sha256 "73eab26bdf5084c3cfb347ab675ce205158a766251d051fcc5dd9be10e44e7ae"
     end
   end
 
