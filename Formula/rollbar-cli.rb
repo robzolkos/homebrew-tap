@@ -1,16 +1,16 @@
 class RollbarCli < Formula
   desc "CLI for reading and listing Rollbar items and occurrences"
   homepage "https://github.com/robzolkos/rollbar-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/robzolkos/rollbar-cli/releases/download/v#{version}/rollbar-darwin-arm64"
-      sha256 "abf07446d07e266f843934cdf8f23a6e1c9c91117bb552089caed45fe0e49238"
+      sha256 "af5cc92e94c12984715557a5619d59012fa73e25092583a0b879ccfcb79878bb"
     else
       url "https://github.com/robzolkos/rollbar-cli/releases/download/v#{version}/rollbar-darwin-amd64"
-      sha256 "975b17c241036a4a7d759c9bcae9267c1ec31336f43a181ef3d97566b2cd3659"
+      sha256 "28523980b0c910a228595a7ffd410a01b92d298c3149d65deaed3fcc88a86e9a"
     end
   end
 
